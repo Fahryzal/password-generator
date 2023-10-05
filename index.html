@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../generator password/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <title>Web Generator</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../api consume film/index.html"
+          >Web consume api</a
+        >
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a
+              class="nav-link"
+              aria-current="page"
+              href="../generator password/index.html"
+              >GEN Password</a
+            >
+            <a class="nav-link" href="../To Do List/to Do List.html"
+              >To Do List</a
+            >
+            <a class="nav-link" href="../cuaca/index.html">cuaca</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="body1">
+      <div class="container1">
+        <div>
+          <h2>Halo I'm Password Generator</h2>
+        </div>
+        <div class="container1">
+          <label for="fname">Isi panjang password :</label>
+          <input type="text" id="fname" name="fname" /><br /><br />
+          <label for="lname">Your Password :</label>
+          <div>
+            <input type="password" id="myInput" name="lname" disabled />
+            <button onclick="copied()">Copy text</button>
+          </div>
+          <div style="text-align: start">
+            <input type="checkbox" onclick="myFunction()" />show password
+          </div>
+          <button onclick="getPassword()">GENERATE NOW</button>
+          <button id="downloadbutton" onclick="savePassword()">
+            DOWNLOAD PASSWORD
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="../generator password/script.js"></script>
+  </body>
+</html>
